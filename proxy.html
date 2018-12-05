@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PacketByte Unblocker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://accounts.pbyte.in/safehamster.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <!-- header font -->
+</head>
+  <body>
+      <form action="/proxy/no-js" method="get" id="unblocker-form">
+      <div class="header">
+         <p>Neutralize Internet</p>
+      </div>
+      <div class="description">
+        <p>PByte is almost ready. If you're interested in testing it out, then sign up at <a href="http://services.packetbyte.net">PacketByte.net</a></p>
+      </div>
+      <div id="error"></div>
+
+      <div class="input">
+        <input type="text" class="button" id="email" name="email" placeholder="www.safehamster.com">
+        <input type="submit" class="button" id="submit" value="GO">
+      </div>
+    </form>
+
+<!-- Intro Section -->
+	<script>
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+		$('unblocker-form').onsubmit = function(){
+			var email = $('email').value;
+			if(email.substr(0,4) != "http"){
+				email = "http://" + email;
+			}
+			window.location.pathname = 'proxy/' + email;
+			return false;
+		}
+		
+		function checkError(){
+			var search = window.location.search;
+			var start = search.indexOf('error=');
+			if(start > -1){
+				var stop = search.indexOf('&', start);
+				if(stop == -1){ stop = undefined; }
+				// +6 for "error="
+				var err = search.substr(start+6, stop);
+				$('error').innerText = $('error').textContent = decodeURIComponent(err);
+				$('error').style.display = "block";
+			}
+		}
+    
+		window.onload = function() { 
+			$('email').focus(); 
+			checkError(); 
+		}
+	</script>
+  
+  
+</body>
+</html>
