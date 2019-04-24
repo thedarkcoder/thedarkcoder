@@ -1,0 +1,110 @@
+zing	zzzing!	nothing
+cake	ZEH CAKE IZ A LIE	nothing
+tralala	have you touched my tralala?	nothing
+lolcopter	that’s my ride home.	nothing
+roflcopter	that’s the father of lolcopter.	nothing
+zingcraft	zzzzzzzzwish!~	nothing
+hello	why hello.	nothing
+shoopdawoop	IMAH CARCHING MAH LAZAR	nothing
+awesome	awesome indeed.	nothing
+thanks	anytime.	nothing
+zomgowned	lol.	nothing
+zomg	ZEUS OWNED MY GEODUDE.	nothing
+lol	lots of laughs?	nothing
+nonsense	exactly, it doesn’t make any sense.	nothing
+wassup	wassuuuuuuuuuuuppp?	nothing
+console	that’s me!	nothing
+brain	that’d be Ido’s.	nothing
+bla	try harder.	nothing
+bye	oh please, don’t leave.	nothing
+ok	okie dokie!	nothing
+flash	it crashes a lot. And does problems with Vista x64 ):	nothing
+zund	????!	nothing
+iphone	don’t even start.	nothing
+wecreatestuff	oh, we totally do.	nothing
+aloligotcomplexcockitandpullit	It’s ‘A loaded god complex, cock it and pull it’ goddammit!.	nothing
+orly	ya rly.	nothing
+gosh	GOSH!!	nothing
+hitler	HITL0R!?	nothing
+easteregg	you found it.	nothing
+gman	yes, you can find him, visualy, in this game…	nothing
+xbox	X BAWX!	nothing
+portal	now you’re thinking with portals. no, nothing was activated.	nothing
+retarded	movie!	nothing
+4815162342	system failure system failure system failure system failure system failure system failure system failure	nothing
+crash	we’re trying, but we’ll never be good as Source	nothing
+messenger	Ido – dragy2005@hotmail.com Hen – henmazolski@gmail.com ):	nothing
+website	wecreatestuff.com	nothing
+lost	charlie’s dead ):	nothing
+sneeze	bless you.	nothing
+eon8	oh you’re fucked now.	nothing
+gmod	GMAN APPROVES.	nothing
+iwanttoplayagame	you are already.	nothing
+time	what’s the point? you know the time, you’re just teasing me.	nothing
+thisismadness	madness?..
+ This
+   IS
+    SPARTAAA!!!
+ subject was kicked to his death.	Kills the player
+hl2	is awesome.	nothing
+hl2ep1	is truly awesome.	nothing
+hl2ep2	is a great looking game which I have not yet played. but by the time you read this I probably already have.	nothing
+tf2	well I liked the first…	nothing
+overlord	I like controling these goblins.	nothing
+pie	Not just a pie, me friends, an APPLE pie.	nothing
+speak	I don’t speak.	nothing
+eat	Die.	nothing
+stop	();	nothing
+nightmarehouse	is an hl2 mod by us D:	nothing
+help / commandlist / showlist / showcommands / showcommand	Partial command database below.
+info – Information.
+kill – suicide.
+help/commandlist/showlist/showcommand – partial command database.
+sound – enable/disable sounds.
+aim/space – allow [SPACE] dummy portal.
+quality 0-3 – set quality level.
+effects 0-2 – set effect level.
+gravity [0>#] – set map gravity level.
+prevlevel – go to next level.
+nextlevel – go to previous level.
+showfps – visible/invisible fps and level name.
+Other commands (show<command>, create<command>, remove<command>, <command>) are hidden.	Shows a censored list of commands (not like this list ;o)
+kill / die	subject commited suicide with an invisible crowbar.	Kills you
+noclip	noclip enabled. [OR] noclip disabled.	Lets you fly through walls
+god	god enabled. [OR] god disabled.	Makes you invincible
+portalproof / antiportal	Portal Proof enabled. [OR] Portal Proof disabled.	Gives you the ability to shoot portals on ANY wall
+dance	dance enabled. [OR] dance disabled.	Lets you dance if you press [a] AND [d]
+sounds / sound	sounds enabled. [OR] sounds disabled.	Toggles volume (0 or 100)
+crosshair	crosshair enabled. [OR] crosshair disabled.	Toggles crosshair (portal crosshair or windows arrow)
+space / aim / detectshot	Aim (space) enabled. [OR] Aim (space) disabled.	Gives you a hint where your portal will be placed when you press [space]
+dynamiccam / dynamicam	playerCam enabled. [OR] playerCam disabled.	Zoomes the camera and only shows a small part of the level around your player model
+stopallsounds / stopsounds	all sounds currently running were stopped	Instantly stops all sounds playing. future sound will be played
+info	Portal 1.1.1
+website – portal.wecreatestuff.com
+Dragy2005@hotmail.com
+Henmazolski@gmail.com	Shows the current portal version and contact adresses
+showfps	fps visible. [OR] fps invisible.	Shows the current “frames per seconds” (fps) of your game on the right upper corner
+showmapbox	mapbox visible. [OR] mapbox invisible.	Shows the collision areas of walls as colored boxes
+showdynamicbox / showdynamicboxes	dynamic physicboxes visible. [OR] dynamic physicboxes invisible. [OR] cannot show dynamic physicboxes.	Shows the collision areas of dynamics (for example switches) as colored boxes
+showportalbox	portalbox visible. [OR] portalbox invisible.	Shows the wall intersected areas of portals as colored boxes
+showportalhitbox	portalhitbox visible. [OR] portalhitbox invisible.	Shows the collision areas of portals as colored boxes
+showportalmask	portalmask visible. [OR] portalmask invisible.	Shows the masked areas of portals as colored boxes
+showsteps / showstep	steps visible. [OR] steps invisible.	shows a small platform in a yellow box form next to a portal, it’s the platform where you can stand in the portal (Thanx to 1lann)
+showshot / showshots	shots visible. [OR] shots invisible.	Shows red dots inside the wall you just shot with a portal. i think it was used for intersection calculations
+gravity ###	gravity is set to ### [OR] the command you’ve entered requires an extra number to be set	Sets the gravity to a given value. as in every other game i know, i think the normal value is 800
+quality # / _quality #	quality is set to # [OR] the command you’ve entered requires an extra number to be set	Sets the flash quality level (0 to 3)
+effects	effects is set to # [OR] the command you’ve entered requires an extra number to be set	Sets the amount of ingame effects (such as motionblur) (0 to 2)
+createbox	object BOX has been spawned.	Spawnes a box above your head
+companion / createcompanion / createcompanioncube / createcompanionbox	object COMPANION BOX has been spawned. [OR] object COMPANION BOX could not be deleted.	Spawnes a companion box above your head (the one with a pinkish heart on it)
+removebox	object BOX has been deleted. [OR] object BOX could not be deleted.	Removes a box from the game
+createcam	object CAM has been spawned.	Spawnes a camera (like the ones on the walls) under your feet
+removecam	object CAM has been deleted. [OR] object CAM could not be deleted.	Removes a camera (including the ones that are already there)
+createball	object BALL has been spawned.	Spawnes a energy ball above your head
+removeBall	object BALL has been deleted. [OR] object BALL could not be deleted.	Removes a energy ball from the game
+createturret / createturrent / createturretr / createturrentr	object TURRET has been spawned.	Spawnes a turret IN your body, which is directed to the right
+createturretl / createturrenl	object TURRET has been spawned.	Spawnes a turret IN your body, which is directed to the left
+removeturret	object TURRET has been deleted. [OR] object TURRET could not be deleted.	Removes a turret from the game
+restartlevel / restartmap	Level ## restarted.	Restarts the level you are currently playing in
+gotolevel ## / gotoandplay ##	level ## launched [OR] Level (##) restarted.	Switches to the level you specified (0 to 40), if leaved blank it restarts the level you are currently playing in
+nextlevel / followinglevel	Next level (##) launched.	Switches to the following level (if you play in level 15 it will switch to level 16)
+prevlevel / previouslevel	Previous level (##) launched. [OR] Cannot play previous level.	Switches to the previous level (if you play in level 15 it will switch to level 14)
