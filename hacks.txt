@@ -1,3 +1,5 @@
+*To activate, press ~*
+
 zing	zzzing!	nothing
 cake	ZEH CAKE IZ A LIE	nothing
 tralala	have you touched my tralala?	nothing
