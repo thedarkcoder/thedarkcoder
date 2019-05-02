@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Billy's pad</title>
+        <style>
+            body {color:rgb(0, 255, 0); background-color:black; text-shadow: 0px 0px 5px rgb(0, 255, 0); overflow-x: hidden;}
+            
+            #eds {color: black; text-shadow: 0 0 0px rgba(0,0,0,0);}
+            
+        </style>
+    </head>
+    <body>
+<p>Congrats! you passed the password puzzle! Sorry about little Billy, and how he was sitting on the key, but he was rather comfortable and I didn't want to move him. After that I rubbed his forehead, becuase he likes it. Anyways, enjoy this other page. The dog normally stays on this one, so it may be a little messy. Oh! Here he is!</p><p><span id="eds">aaaaaaaaa</span>▄<span id="eds">aaaaaaaaaaaaaaaaaaaaaa</span>▄<br>
+<span id="eds">aaaaaaaa</span>▌▒█<span id="eds">aaaaaaaaaaaaaaaaa</span>▄▀▒▌<br>
+<span id="eds">aaaaaaaa</span>▌▒▒█<span id="eds">aaaaaaaaaaaa</span>▄▀▒▒▒▐<br>
+<span id="eds">aaaaaaa</span>▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐<br>
+<span id="eds">aaaaa</span>▄▄▀▒<span id="columns-dragIcon"><span class="column">░▒▒▒▒▒▒▒</span>▒▒█▒▒▄█▒▐<br>
+<span id="eds">aaa</span>▄▀▒▒▒░<span class="column" class="column">░░▒▒▒░░</span>░▒▒▒▀██▀▒▌<br>
+<span id="eds">aa</span>▐▒▒▒▄▄▒<span class="column">▒▒▒░░</span></span>░▒▒▒▒▒▒▒▀▄▒▒▌<br>
+<span id="eds">aa</span>▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐<br>
+<span id="eds">a</span>▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌<br>
+<span id="eds">a</span>▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌<br>
+▌▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐<br>
+▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌<br>
+▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐<br>
+<span id="eds">a</span>▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌<br>
+<span id="eds">a</span>▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐<br>
+<span id="eds">aa</span>▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌<br>
+<span id="eds">aaaaa</span>▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀<br>
+<span id="eds">aaaaaaa</span>▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀<br>
+<span id="eds">aaaaaaaaaa</span>▒▒▒▒▒▒▒▒▒▒▀▀</p>
+
+<script>
+(function() {
+  var id_ = 'columns-dragIcon';
+  var cols_ = document.querySelectorAll('#' + id_ + ' .column');
+
+  this.handleDragStart = function(e) {
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/html', this.innerHTML);
+
+    var dragIcon = document.createElement('img');
+    dragIcon.src = 'https://thedarkcoder.github.io/billy.png';
+    e.dataTransfer.setDragImage(dragIcon, -10, -10);
+
+    // Target element (this) is the source node.
+    this.style.opacity = '0.4';
+  };
+
+  this.handleDragLeave = function(e) {
+    // this/e.target is previous target element.
+
+    this.removeClassName('over');
+  };
+
+  this.handleDragEnd = function(e) {
+    // this/e.target is the source node.
+
+    this.style.opacity = '1';
+
+    [].forEach.call(cols_, function (col) {
+      col.removeClassName('over');
+    });
+  };
+
+  [].forEach.call(cols_, function (col) {
+    // Enable columns to be draggable.
+    col.setAttribute('draggable', 'true');
+    col.addEventListener('dragstart', this.handleDragStart, false);
+    col.addEventListener('dragend', this.handleDragEnd, false);
+    col.addEventListener('dragleave', this.handleDragLeave, false);
+  });
+
+})();
+
+</script>
+    </body>
+</html>
