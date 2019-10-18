@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notepad</title>
+<style>
+body {height: 100%; margin: 0px;}
+.body1 {background: red; color: black;}
+.body2 {background: #001a45; color: gray;}
+
+textarea {width: calc(100% - 4px); height: calc(100vh - 50px); resize: none; bottom: 0px; position: absolute; border: 0px; font-size: 15px;}
+
+.textarea1 {background: white; color: black;}
+.textarea2 {background: black; color: gray;}
+
+textarea:focus {outline: none;}
+.topbar {position: absolute; top: -27px; cursor: pointer; padding: 5px; text-align: center; user-select: none}
+
+#download {left: -1px; border: 1px solid black;}
+#texdwn {left: 117px; border: 1px solid black;}
+#mode {left: 221px; border: 1px solid black; width: 40px;}
+</style>
+</head>
+<body class="body1">
+<h1 class="topbar" id="download">🠋 Html</h1>
+<h1 class="topbar" id="texdwn">🠋 Text</h1>
+<h1 class="topbar" id="mode" onclick="button()">☀</h1>
+<textarea id="notepad" class="textarea1"></textarea>
+<script>
+document.getElementById("notepad").value = localStorage.getItem("rem");
+document.getElementById("notepad").onkeyup = function() {keys()};
+document.getElementById("notepad").onkeypress = function() {keys()};
+function keys(){
+localStorage["rem"] = document.getElementById("notepad").value;
+}
+
+
+if(localStorage.getItem("mode") == 'night'){
+   document.getElementById("mode").innerText="☽";
+document.body.classList.add("body2");
+document.body.classList.remove("body1");
+document.getElementById("notepad").classList.add("textarea2");
+document.getElementById("notepad").classList.remove("textarea1");
+}
+
+function button(){
+if(document.getElementById("mode").innerText=="☀"){
+   document.getElementById("mode").innerText="☽";
+   localStorage.setItem("mode","night");
+document.body.classList.add("body2");
+document.body.classList.remove("body1");
+document.getElementById("notepad").classList.add("textarea2");
+document.getElementById("notepad").classList.remove("textarea1");
+} else {
+   document.getElementById("mode").innerText="☀";
+   localStorage.setItem("mode","day");
+document.body.classList.add("body1");
+document.body.classList.remove("body2");
+document.getElementById("notepad").classList.add("textarea1");
+document.getElementById("notepad").classList.remove("textarea2");
+   }}
+
+function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+// Start file download.
+document.getElementById("download").addEventListener("click", function(){
+    var text = document.getElementById("notepad").value;
+var name = prompt("file name:", "");
+var filename = name + ".html";
+if (name == null || name == "") { } 
+else {     
+    download(filename, text);}
+}, false);
+
+document.getElementById("texdwn").addEventListener("click", function(){
+    var text = document.getElementById("notepad").value;
+var name = prompt("file name:", "");
+var filename = name + ".txt";
+if (name == null || name == "") { } 
+else {     
+    download(filename, text);}
+}, false);
+</script>
+</body>
+</html>
